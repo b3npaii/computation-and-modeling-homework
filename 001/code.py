@@ -6,7 +6,10 @@ def sum_of_n_numbers(n):
 
 
 def word_symmetry(word):
-    return word == word[::-1]
+    if word == word[::-1]:
+        return "True"
+    else:
+        return "False"
 
 
 def convert_to_numbers(input_string):
@@ -19,8 +22,10 @@ def convert_to_numbers(input_string):
 
 
 def is_prime(n):
-    for m in range(2, n):
+    for m in range(2, n//2):
         if n % m == 0:
-            return False
+            return "False"
         else:
-            return True
+            return "True"
+
+
