@@ -70,4 +70,3 @@ if convert_to_base_2(convert_to_base_10(10110)) != 10110:
     print("conversions are not wokring")
 else:
     print("conversions are working")
-
