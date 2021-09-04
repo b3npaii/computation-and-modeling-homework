@@ -9,9 +9,9 @@ def sum_of_n_numbers(n):
 
 def word_symmetry(word):
     if word == word[::-1]:
-        return "True"
+        return True
     else:
-        return "False"
+        return False
 
 
 def convert_to_numbers(input_string):
@@ -26,10 +26,9 @@ def convert_to_numbers(input_string):
 def is_prime(n):
     for m in range(2, n//2 + 1):
         if n % m == 0:
-            return "False"
+            return False
         elif m == n//2:
-            return "True"
-print(is_prime(13))
+            return True
 
 
 def get_intersection(list1, list2):
@@ -39,8 +38,6 @@ def get_intersection(list1, list2):
             if element not in answer:
                 answer.append(element)
     return answer
-
-print(get_intersection([1,2,3,1],[1,2,3]))
 
 
 def get_union(list1, list2):
@@ -77,8 +74,6 @@ def get_n_term_recursive(n):
     if n == 1:
         return 5
     return(get_n_term_recursive(n-1)*3 - 4)
-
-print(get_n_term_recursive(4))
 
 
 def convert_to_base_10(n):

@@ -12,16 +12,16 @@ from code import nth_fibonacci_number
 from code import convert_to_base_2
 
 
-if word_symmetry("thing") == "True":
+if word_symmetry("thing") == True:
     print("word_symmetry is not working")
 
-if word_symmetry("!taddat!") == "True":
+if word_symmetry("!taddat!") == True:
     print("word_symmetry is working")
 
-if is_prime(20) == "False":
+if is_prime(20) == False:
     print("is_prime is working")
 
-if is_prime(23) == "True":
+if is_prime(23) == True:
     print("is_prime is working")
 
 if convert_to_numbers("abc") != [1, 2, 3]:
